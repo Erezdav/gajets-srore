@@ -2,7 +2,7 @@ export const formatPrice = (value = 0) => {
   return new Intl.NumberFormat("en-IN", {
     style: "currency",
     currency: "USD",
-  }).format(value / 100);
+  }).format(value);
 };
 
 export const getUniqueValues = (data, type) => {
